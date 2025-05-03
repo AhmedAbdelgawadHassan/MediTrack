@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:meditrack/Core/utils/app_routers.dart';
 
 void main()
 {
@@ -11,6 +12,9 @@ class MediTrack extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return MaterialApp.router(
+      routerConfig: AppRouters.router,
+      debugShowCheckedModeBanner: false,
+    );
   }
 }
